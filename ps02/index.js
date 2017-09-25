@@ -151,11 +151,8 @@ var circle_M6 = svg.append('circle')
     .attr('cy', 550)
     .attr('r', 50)
     .attr('fill', 'magenta')
-    .on('click', function(d){
-        d3.select(this)
-            .attr('fill', 'yellow')
-            .attr('stroke', 'black')
-            .attr('stroke-width', 10);
+    .on('click', function(d) {
+        d3.select(this).attr('fill', 'yellow').attr('stroke', 'black').attr('stroke-width', 10);
     });
 
 var line_M1 = svg.append('line')
