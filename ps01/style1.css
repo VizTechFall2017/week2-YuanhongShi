@@ -72,9 +72,9 @@
 
 }
 #circle_M6{
-     fill:magenta;
+    fill:magenta;
 
- }
+}
 
 #line_M1{
     stroke-width:5px;
@@ -92,7 +92,7 @@
     stroke: magenta;
 }
 
-#line_M3{
+#line_M4{
     stroke-width:5px;
     stroke: magenta;
 }
