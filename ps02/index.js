@@ -106,13 +106,7 @@ var line_B4 = svg.append('line')
     .attr('y1', 620)
     .attr('y2', 620)
     .attr('stroke', 'black')
-    .attr('stroke-width', 3)
-    .on('click', function(d){
-        d3.select(this)
-            .attr('fill', 'yellow')
-            .attr('stroke', 'black')
-            .attr('stroke-width', 10);
-    });
+    .attr('stroke-width', 3);
 
 var line_B5 = svg.append('line')
     .attr('x1', 350)
@@ -156,7 +150,13 @@ var circle_M6 = svg.append('circle')
     .attr('cx', 380)
     .attr('cy', 550)
     .attr('r', 50)
-    .attr('fill', 'magenta');
+    .attr('fill', 'magenta')
+    .on('click', function(d){
+        d3.select(this)
+            .attr('fill', 'yellow')
+            .attr('stroke', 'black')
+            .attr('stroke-width', 10);
+    });
 
 var line_M1 = svg.append('line')
     .attr('x1', 400)
