@@ -152,10 +152,12 @@ var circle_M6 = svg.append('circle')
     .attr('r', 50)
     .attr('fill', 'magenta')
     .on('mouseover', function(d) {
-        d3.select(this).attr('fill', 'yellow').attr('stroke', 'gray').attr('stroke-width', 10);
+        d3.select(this).attr('fill', 'yellow')
+            .attr('stroke', 'gray').attr('stroke-width', 10);
     })
     .on('mouseout', function(d){
-        d3.select(this).attr('stroke','black').attr('stroke-width',1);
+        d3.select(this).attr('fill', 'magenta')
+            .attr('stroke','black').attr('stroke-width',1);
     });
 
 var line_M1 = svg.append('line')
